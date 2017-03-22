@@ -17,17 +17,17 @@ holdAttention(Calculus)
 while (time_left != 0) {
 
     current_focus = MetaAttention.getCurrentFocus()
-	mind_wander = current_focus != Calculus
+    mind_wander = current_focus != Calculus
 
-	if (mind_wander) {
-		disengageAttention(current_focus);
-		moveAttention(Calculus);
-		holdAttention(Calculus);
+    if (mind_wander) {
+        disengageAttention(current_focus);
+        moveAttention(Calculus);
+        holdAttention(Calculus);
 
-	} //end if statement
+    } //end if statement
 
-	setTimeOut.(seconds=30)
-	time_left = study_session.getTimeLeft()
+    setTimeOut.(seconds=30)
+    time_left = study_session.getTimeLeft()
 }//end while loop
 
 haveBreak();
