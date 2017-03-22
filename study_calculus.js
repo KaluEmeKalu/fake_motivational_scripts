@@ -1,5 +1,3 @@
-from 
-
 from executive_functions.attention import (
 holdAttention,
 disengageAttention,
@@ -16,11 +14,11 @@ holdAttention(Calculus)
 
 while (time_left != 0) {
 
-    current_focus = MetaAttention.getCurrentFocus()
-    mind_wander = current_focus != Calculus
+    currentFocus = MetaAttention.getCurrentFocus()
+    isMindWandering = current_focus != Calculus
 
-    if (mind_wander) {
-        disengageAttention(current_focus);
+    if (isMindWandering) {
+        disengageAttention(currentFocus);
         moveAttention(Calculus);
         holdAttention(Calculus);
 
